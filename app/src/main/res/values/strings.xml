@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Выбор картинки для элемента из внешнего файла</string>
+    <string name="button_one">1</string>
+    <string name="button_two">2</string>
+    <string name="button_three">3</string>
+    <string name="button_for">4</string>
+    <string name="button_five">5</string>
+    <string name="button_six">6</string>
+    <string name="button_seven">7</string>
+    <string name="button_eight">8</string>
+    <string name="button_nine">9</string>
+    <string name="button_zero">0</string>
+    <string name="button_plus">+</string>
+    <string name="button_minus">-</string>
+    <string name="button_division">&#247;</string>
+    <string name="button_multiplication">&#215;</string>
+    <string name="button_point">,</string>
+    <string name="button_submit">=</string>
+    <string name="button_clear">C</string>
+    <string name="button_percent">%</string>
+    <string name="button_plus_minus">&#177;</string>
+    <string name="downloads">Downloads/</string>
+    <string name="image">12.png</string>
+    <string name="default_background">фон по умолчанию</string>
+    <string name="clear_background">удалить фон</string>
+    <string name="load_background">фон из файла</string>
+    <string name="load_error">Ошибка загрузки файла!</string>
+    <string name="file_loaded">Файл загружен!</string>
+</resources>
