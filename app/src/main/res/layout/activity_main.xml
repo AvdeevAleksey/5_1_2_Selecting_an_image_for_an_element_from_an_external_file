@@ -31,10 +31,10 @@
             android:layout_height="match_parent"
             android:contentDescription=""
             android:scaleType="fitXY"
-            android:src="@drawable/cofeek"
+            android:src="@drawable/voda"
             android:visibility="invisible"
             tools:ignore="HardcodedText"
-            tools:src="@drawable/cofeek" />
+            tools:src="@drawable/voda" />
 
         <ImageView
             android:id="@+id/backroundImg"
