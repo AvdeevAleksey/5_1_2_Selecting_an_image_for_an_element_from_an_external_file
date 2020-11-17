@@ -73,38 +73,25 @@ public class MainActivity extends AppCompatActivity {
         Button loadButton = findViewById(R.id.loadButton);
         filenameLayout = findViewById(R.id.filenameLayout);
 
-        loadButton.setOnClickListener(onClickListener);
-
-
         loadImage(fileName);
 
         setBackgroundMode();
-
     }
-
-    final Button.OnClickListener onClickListener = new Button.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.loadButton:
-                    fileName = editTextFileName.getText().toString();
-                    filenameLayout.setVisibility(View.INVISIBLE);
-                    if (loadImage(fileName)) {
-                        Toast.makeText(MainActivity.this, getString(R.string.file_loaded), Toast.LENGTH_LONG).show();
-                        backgroundMode = LOADED_BACKROUND;
-                        setBackgroundMode();
-                    } else {
-                        Toast.makeText(MainActivity.this, getString(R.string.load_error), Toast.LENGTH_LONG).show();
-                    }
-                    break;
-            }
-            }
-        };
-
 
     public void anyButtonClicked(View view) {
         if (textViewResult.getText().toString().equals(getText(R.string.button_zero).toString())) {textViewResult.setText("");}
         switch (view.getId()) {
+            case R.id.loadButton:
+                fileName = editTextFileName.getText().toString();
+                filenameLayout.setVisibility(View.INVISIBLE);
+                if (loadImage(fileName)) {
+                    Toast.makeText(MainActivity.this, getString(R.string.file_loaded), Toast.LENGTH_LONG).show();
+                    backgroundMode = LOADED_BACKROUND;
+                    setBackgroundMode();
+                } else {
+                    Toast.makeText(MainActivity.this, getString(R.string.load_error), Toast.LENGTH_LONG).show();
+                }
+                break;
             case R.id.btnZero: {
                 printMyText(R.string.button_zero);
                 break;

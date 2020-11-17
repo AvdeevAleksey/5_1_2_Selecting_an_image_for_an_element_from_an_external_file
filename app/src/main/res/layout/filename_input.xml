@@ -43,6 +43,7 @@
         tools:ignore="HardcodedText"
         android:text="load"
         app:layout_constraintStart_toEndOf="@+id/editTextFileName"
-        app:layout_constraintTop_toTopOf="@id/editTextFileName" />
+        app:layout_constraintTop_toTopOf="@id/editTextFileName"
+        android:onClick="anyButtonClicked"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
